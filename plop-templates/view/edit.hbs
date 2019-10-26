@@ -1,0 +1,54 @@
+{{#if template}}
+<template>
+  <div />
+</template>
+{{/if}}
+
+{{#if script}}
+<script>
+export default {
+  name: '{{ properCase name }}Edit',
+  components: {},
+  mixins: [],
+  extends: {},
+  filters: {},
+  provide: {},
+  inject: [],
+  props: {},
+  computed: {},
+  watch: {},
+  data() {
+    return {}
+  },
+  beforeRouteEnter(to, from, next) {
+    next(vm => {
+      // access to component instance via `vm`
+    })
+  },
+  beforeRouteUpdate(to, from, next) {
+    // just use `this`
+    next()
+  },
+  beforeRouteLeave(to, from, next) {
+    next()
+  },
+  beforeCreate() {},
+  created() {},
+  beforeMount() {},
+  mounted() {},
+  beforeUpdate() {},
+  updated() {},
+  activated() {},
+  deactivated() {},
+  beforeDestroy() {},
+  destroyed() {},
+  methods: {}
+}
+</script>
+{{/if}}
+
+{{#if style}}
+<style lang="scss" scoped>
+
+</style>
+{{/if}}
